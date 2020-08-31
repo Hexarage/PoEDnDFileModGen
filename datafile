@@ -1,0 +1,337 @@
+{
+	"CRITICAL_STRIKE": 
+[
+	{"POSSIBLE_ITEMS": [7, 1, 5, 6, 4], "MIN": 1, "ISPREFIX": false, "DESC": "Add 1d4 damage on a critical strike, damage is the same as that of the weapon", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 1, 5, 6, 4], "MIN": 1, "ISPREFIX": false, "DESC": "Add 2d4 damage on a critical strike, damage is the same as that of the weapon", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 1, 5, 6, 4], "MIN": 1, "ISPREFIX": false, "DESC": "Add 1d10 damage on a critical strike, damage is the same as that of the weapon", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 1, 5, 6, 4], "MIN": 1, "ISPREFIX": false, "DESC": "Add 2d10 damage on a critical strike, damage is the same as that of the weapon", "MAX": 1}
+],
+"ATTACK_SPEED": 
+[
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 1, "ISPREFIX": false, "DESC": "The magic is muddled and chaotic, granting nothing to the wearer", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 1, "ISPREFIX": false, "DESC": "The magic is muddled and chaotic, granting nothing to the wearer", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 1, "ISPREFIX": false, "DESC": "Item grants an extra attack if the wearer has attacked the prior turn", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 1, "ISPREFIX": false, "DESC": "Item grants an extra attack", "MAX": 1}
+],
+"SLASHING_DAMAGE_REDUCTION": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -4, "ISPREFIX": false, "DESC": "ignore {} of slashing damage", "MAX": -1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -8, "ISPREFIX": false, "DESC": "ignore {} of slashing damage", "MAX": -5}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of slashing damage", "MAX": -10}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -24, "ISPREFIX": false, "DESC": "ignore {} of slashing damage", "MAX": -20}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of slashing damage as well as granting resistance to that element", "MAX": -10}
+], 
+"PIERCING_DAMAGE_REDUCTION": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -4, "ISPREFIX": false, "DESC": "ignore {} of piercing damage", "MAX": -1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -8, "ISPREFIX": false, "DESC": "ignore {} of piercing damage", "MAX": -5}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of piercing damage", "MAX": -10}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -24, "ISPREFIX": false, "DESC": "ignore {} of piercing damage", "MAX": -20}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of piercing damage as well as granting resistance to that element", "MAX": -10}
+],  
+"BLUDGEONING_DAMAGE_REDUCTION": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -4, "ISPREFIX": false, "DESC": "ignore {} of bludgeoning damage", "MAX": -1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -8, "ISPREFIX": false, "DESC": "ignore {} of bludgeoning damage", "MAX": -5}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of bludgeoning damage", "MAX": -10}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -24, "ISPREFIX": false, "DESC": "ignore {} of bludgeoning damage", "MAX": -20}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of bludgeoning damage as well as granting resistance to that element", "MAX": -10}
+],
+"POISON_DAMAGE_REDUCTION": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -4, "ISPREFIX": false, "DESC": "ignore {} of poison damage", "MAX": -1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -8, "ISPREFIX": false, "DESC": "ignore {} of poison damage", "MAX": -5}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of poison damage", "MAX": -10}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -24, "ISPREFIX": false, "DESC": "ignore {} of poison damage", "MAX": -20}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of poison damage as well as granting resistance to that element", "MAX": -10}
+],
+"ACID_DAMAGE_REDUCTION": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -4, "ISPREFIX": false, "DESC": "ignore {} of acid damage", "MAX": -1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -8, "ISPREFIX": false, "DESC": "ignore {} of acid damage", "MAX": -5}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of acid damage", "MAX": -10}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -24, "ISPREFIX": false, "DESC": "ignore {} of acid damage", "MAX": -20}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of acid damage as well as granting resistance to that element", "MAX": -10}
+], 
+"FIRE_DAMAGE_REDUCTION": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -4, "ISPREFIX": false, "DESC": "ignore {} of fire damage", "MAX": -1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -8, "ISPREFIX": false, "DESC": "ignore {} of fire damage", "MAX": -5}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of fire damage", "MAX": -10}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -24, "ISPREFIX": false, "DESC": "ignore {} of fire damage", "MAX": -20}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of fire damage as well as granting resistance to that element", "MAX": -10}
+],
+"COLD_DAMAGE_REDUCTION": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -4, "ISPREFIX": false, "DESC": "ignore {} of cold damage", "MAX": -1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -8, "ISPREFIX": false, "DESC": "ignore {} of cold damage", "MAX": -5}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of cold damage", "MAX": -10}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -24, "ISPREFIX": false, "DESC": "ignore {} of cold damage", "MAX": -20}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of cold damage as well as granting resistance to that element", "MAX": -10}
+],
+"RADIANT_DAMAGE_REDUCTION": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -4, "ISPREFIX": false, "DESC": "ignore {} of radiant damage", "MAX": -1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -8, "ISPREFIX": false, "DESC": "ignore {} of radiant damage", "MAX": -5}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of radiant damage", "MAX": -10}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -24, "ISPREFIX": false, "DESC": "ignore {} of radiant damage", "MAX": -20}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of radiant damage as well as granting resistance to that element", "MAX": -10}
+],
+"NECROTIC_DAMAGE_REDUCTION": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -4, "ISPREFIX": false, "DESC": "ignore {} of necrotic damage", "MAX": -1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -8, "ISPREFIX": false, "DESC": "ignore {} of necrotic damage", "MAX": -5}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of necrotic damage", "MAX": -10}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -24, "ISPREFIX": false, "DESC": "ignore {} of necrotic damage", "MAX": -20}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of necrotic damage as well as granting resistance to that element", "MAX": -10}
+],
+"LIGHTNING_DAMAGE_REDUCTION": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -4, "ISPREFIX": false, "DESC": "ignore {} of lightning damage", "MAX": -1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -8, "ISPREFIX": false, "DESC": "ignore {} of lightning damage", "MAX": -5}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of lightning damage", "MAX": -10}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -24, "ISPREFIX": false, "DESC": "ignore {} of lightning damage", "MAX": -20}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of lightning damage as well as granting resistance to that element", "MAX": -10}
+],
+"THUNDER_DAMAGE_REDUCTION": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -4, "ISPREFIX": false, "DESC": "ignore {} of thunder damage", "MAX": -1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -8, "ISPREFIX": false, "DESC": "ignore {} of thunder damage", "MAX": -5}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of thunder damage", "MAX": -10}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -24, "ISPREFIX": false, "DESC": "ignore {} of thunder damage", "MAX": -20}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of thunder damage as well as granting resistance to that element", "MAX": -10}
+],
+"FORCE_DAMAGE_REDUCTION": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -4, "ISPREFIX": false, "DESC": "ignore {} of force damage", "MAX": -1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -8, "ISPREFIX": false, "DESC": "ignore {} of force damage", "MAX": -5}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of force damage", "MAX": -10}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -24, "ISPREFIX": false, "DESC": "ignore {} of force damage", "MAX": -20}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of force damage as well as granting resistance to that element", "MAX": -10}
+],  
+"PSYCHIC_DAMAGE_REDUCTION": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -4, "ISPREFIX": false, "DESC": "ignore {} of psychic damage", "MAX": -1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -8, "ISPREFIX": false, "DESC": "ignore {} of psychic damage", "MAX": -5}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of psychic damage", "MAX": -10}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -24, "ISPREFIX": false, "DESC": "ignore {} of psychic damage", "MAX": -20}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": -16, "ISPREFIX": false, "DESC": "ignore {} of psychic damage as well as granting resistance to that element", "MAX": -10}
+],
+"ADDED_SLASHING_DAMAGE": 
+[
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 4, "ISPREFIX": false, "DESC": "Add 1d{} slashing damage to successful attacks", "MAX": 4}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 8, "ISPREFIX": false, "DESC": "Add 1d{} slashing damage to successful attacks", "MAX": 8}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 5, "ISPREFIX": false, "DESC": "Add 2d{} slashing damage to successful attacks", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 6, "ISPREFIX": false, "DESC": "Add 2d{} slashing damage to successful attacks", "MAX": 6}
+],
+"ADDED_PIERCING_DAMAGE":
+[
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 4, "ISPREFIX": false, "DESC": "Add 1d{} piercing damage to successful attacks", "MAX": 4}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 8, "ISPREFIX": false, "DESC": "Add 1d{} piercing damage to successful attacks", "MAX": 8}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 5, "ISPREFIX": false, "DESC": "Add 2d{} piercing damage to successful attacks", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 6, "ISPREFIX": false, "DESC": "Add 2d{} piercing damage to successful attacks", "MAX": 6}
+],
+"ADDED_BLUDGEONING_DAMAGE":
+[
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 4, "ISPREFIX": false, "DESC": "Add 1d{} bludgeoning damage to successful attacks", "MAX": 4}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 8, "ISPREFIX": false, "DESC": "Add 1d{} bludgeoning damage to successful attacks", "MAX": 8}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 5, "ISPREFIX": false, "DESC": "Add 2d{} bludgeoning damage to successful attacks", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 6, "ISPREFIX": false, "DESC": "Add 2d{} bludgeoning damage to successful attacks", "MAX": 6}
+],
+"ADDED_POISON_DAMAGE":
+[
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 4, "ISPREFIX": false, "DESC": "Add 1d{} poison damage to successful attacks", "MAX": 4}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 8, "ISPREFIX": false, "DESC": "Add 1d{} poison damage to successful attacks", "MAX": 8}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 5, "ISPREFIX": false, "DESC": "Add 2d{} poison damage to successful attacks", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 6, "ISPREFIX": false, "DESC": "Add 2d{} poison damage to successful attacks", "MAX": 6}
+],
+"ADDED_ACID_DAMAGE":
+[
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 4, "ISPREFIX": false, "DESC": "Add 1d{} acid damage to successful attacks", "MAX": 4}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 8, "ISPREFIX": false, "DESC": "Add 1d{} acid damage to successful attacks", "MAX": 8}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 5, "ISPREFIX": false, "DESC": "Add 2d{} acid damage to successful attacks", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 6, "ISPREFIX": false, "DESC": "Add 2d{} acid damage to successful attacks", "MAX": 6}
+],
+"ADDED_FIRE_DAMAGE":
+[
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 4, "ISPREFIX": false, "DESC": "Add 1d{} fire damage to successful attacks", "MAX": 4}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 8, "ISPREFIX": false, "DESC": "Add 1d{} fire damage to successful attacks", "MAX": 8}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 5, "ISPREFIX": false, "DESC": "Add 2d{} fire damage to successful attacks", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 6, "ISPREFIX": false, "DESC": "Add 2d{} fire damage to successful attacks", "MAX": 6}
+], 
+"ADDED_COLD_DAMAGE": 
+[
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 4, "ISPREFIX": false, "DESC": "Add 1d{} cold damage to successful attacks", "MAX": 4}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 8, "ISPREFIX": false, "DESC": "Add 1d{} cold damage to successful attacks", "MAX": 8}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 5, "ISPREFIX": false, "DESC": "Add 2d{} cold damage to successful attacks", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 6, "ISPREFIX": false, "DESC": "Add 2d{} cold damage to successful attacks", "MAX": 6}
+],
+"ADDED_RADIANT_DAMAGE":
+[
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 4, "ISPREFIX": false, "DESC": "Add 1d{} radiant damage to successful attacks", "MAX": 4}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 8, "ISPREFIX": false, "DESC": "Add 1d{} radiant damage to successful attacks", "MAX": 8}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 5, "ISPREFIX": false, "DESC": "Add 2d{} radiant damage to successful attacks", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 6, "ISPREFIX": false, "DESC": "Add 2d{} radiant damage to successful attacks", "MAX": 6}
+], 
+"ADDED_NECROTIC_DAMAGE": 
+[
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 4, "ISPREFIX": false, "DESC": "Add 1d{} necrotic damage to successful attacks", "MAX": 4}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 8, "ISPREFIX": false, "DESC": "Add 1d{} necrotic damage to successful attacks", "MAX": 8}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 5, "ISPREFIX": false, "DESC": "Add 2d{} necrotic damage to successful attacks", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 6, "ISPREFIX": false, "DESC": "Add 2d{} necrotic damage to successful attacks", "MAX": 6}
+], 
+"ADDED_LIGHTNING_DAMAGE": 
+[
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 4, "ISPREFIX": false, "DESC": "Add 1d{} lightning damage to successful attacks", "MAX": 4}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 8, "ISPREFIX": false, "DESC": "Add 1d{} lightning damage to successful attacks", "MAX": 8}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 5, "ISPREFIX": false, "DESC": "Add 2d{} lightning damage to successful attacks", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 6, "ISPREFIX": false, "DESC": "Add 2d{} lightning damage to successful attacks", "MAX": 6}
+], 
+"ADDED_THUNDER_DAMAGE": 
+[
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 4, "ISPREFIX": false, "DESC": "Add 1d{} thunder damage to successful attacks", "MAX": 4}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 8, "ISPREFIX": false, "DESC": "Add 1d{} thunder damage to successful attacks", "MAX": 8}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 5, "ISPREFIX": false, "DESC": "Add 2d{} thunder damage to successful attacks", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 6, "ISPREFIX": false, "DESC": "Add 2d{} thunder damage to successful attacks", "MAX": 6}
+], 
+"ADDED_FORCE_DAMAGE": 
+[
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 4, "ISPREFIX": false, "DESC": "Add 1d{} force damage to successful attacks", "MAX": 4}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 8, "ISPREFIX": false, "DESC": "Add 1d{} force damage to successful attacks", "MAX": 8}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 5, "ISPREFIX": false, "DESC": "Add 2d{} force damage to successful attacks", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 6, "ISPREFIX": false, "DESC": "Add 2d{} force damage to successful attacks", "MAX": 6}
+],
+"ADDED_PSYCHIC_DAMAGE": 
+[
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 4, "ISPREFIX": false, "DESC": "Add 1d{} psychic damage to successful attacks", "MAX": 4}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 8, "ISPREFIX": false, "DESC": "Add 1d{} psychic damage to successful attacks", "MAX": 8}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 5, "ISPREFIX": false, "DESC": "Add 2d{} psychic damage to successful attacks", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [7, 1, 4, 5, 6], "MIN": 6, "ISPREFIX": false, "DESC": "Add 2d{} psychic damage to successful attacks", "MAX": 6}
+],
+"SPELL_DAMAGE": 
+[
+	{"POSSIBLE_ITEMS": [7, 4, 5, 6], "MIN": 1, "ISPREFIX": false, "DESC": "Add 2d3 to spell damage", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 4, 5, 6], "MIN": 1, "ISPREFIX": false, "DESC": "Add 2d4 to spell damage", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 4, 5, 6], "MIN": 1, "ISPREFIX": false, "DESC": "Add 2d5 to spell damage", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 4, 5, 6], "MIN": 1, "ISPREFIX": false, "DESC": "Add 2d6 to spell damage", "MAX": 1}
+],
+"HEALING_POWER": 
+[
+	{"POSSIBLE_ITEMS": [7, 4, 5, 6], "MIN": 1, "ISPREFIX": false, "DESC": "Add 2d4 to healing spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 4, 5, 6], "MIN": 1, "ISPREFIX": false, "DESC": "Add 2d5 to healing spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 4, 5, 6], "MIN": 1, "ISPREFIX": false, "DESC": "Add 2d6 to healing spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 4, 5, 6], "MIN": 1, "ISPREFIX": false, "DESC": "Add 2d8 to healing spells", "MAX": 1}
+],
+"HEALING_CRITICALS": 
+[
+	{"POSSIBLE_ITEMS": [7, 4, 5, 6], "MIN": 1, "ISPREFIX": true, "DESC": "Healing spells can now crit, for each die that has rolled maximum, roll again up to twice per die", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 4, 5, 6], "MIN": 1, "ISPREFIX": true, "DESC": "Healing spells can now crit, for each die that has rolled maximum, roll again up to three times per die", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 4, 5, 6], "MIN": 1, "ISPREFIX": true, "DESC": "Healing spells can now crit, for each die that has rolled maximum, roll again up to four times per die", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 4, 5, 6], "MIN": 1, "ISPREFIX": true, "DESC": "Healing spells can now crit, for each die that has rolled maximum, roll again", "MAX": 1}
+], 
+"AC_BOOST": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 3, 8, 4], "MIN": 1, "ISPREFIX": true, "DESC": "+{} To AC", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 3, 8, 4], "MIN": 2, "ISPREFIX": true, "DESC": "+{} To AC", "MAX": 2}, 
+	{"POSSIBLE_ITEMS": [0, 1, 3, 8, 4], "MIN": 3, "ISPREFIX": true, "DESC": "+{} To AC", "MAX": 3}, 
+	{"POSSIBLE_ITEMS": [0, 1, 3, 8, 4], "MIN": 4, "ISPREFIX": true, "DESC": "+{} To AC", "MAX": 4}
+],
+"STR_STAT_BOOST": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+{} to STR ", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 2, "ISPREFIX": true, "DESC": "+{} to STR ", "MAX": 2}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 3, "ISPREFIX": true, "DESC": "+{} to STR ", "MAX": 3}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 4, "ISPREFIX": true, "DESC": "+{} to STR ", "MAX": 4}
+], 
+"DEX_STAT_BOOST": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+{} to DEX ", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 2, "ISPREFIX": true, "DESC": "+{} to DEX ", "MAX": 2}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 3, "ISPREFIX": true, "DESC": "+{} to DEX ", "MAX": 3}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 4, "ISPREFIX": true, "DESC": "+{} to DEX ", "MAX": 4}
+],
+"CON_STAT_BOOST": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+{} to CON ", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 2, "ISPREFIX": true, "DESC": "+{} to CON ", "MAX": 2}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 3, "ISPREFIX": true, "DESC": "+{} to CON ", "MAX": 3}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 4, "ISPREFIX": true, "DESC": "+{} to {} ", "MAX": 4}
+],
+"INT_STAT_BOOST": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+{} to INT ", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 2, "ISPREFIX": true, "DESC": "+{} to INT ", "MAX": 2}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 3, "ISPREFIX": true, "DESC": "+{} to INT ", "MAX": 3}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 4, "ISPREFIX": true, "DESC": "+{} to INT ", "MAX": 4}
+],
+"WIS_STAT_BOOST": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+{} to WIS ", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 2, "ISPREFIX": true, "DESC": "+{} to WIS ", "MAX": 2}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 3, "ISPREFIX": true, "DESC": "+{} to WIS ", "MAX": 3}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 4, "ISPREFIX": true, "DESC": "+{} to WIS ", "MAX": 4}
+],
+"CHA_STAT_BOOST": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+{} to CHA ", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 2, "ISPREFIX": true, "DESC": "+{} to CHA ", "MAX": 2}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 3, "ISPREFIX": true, "DESC": "+{} to CHA ", "MAX": 3}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 4, "ISPREFIX": true, "DESC": "+{} to CHA ", "MAX": 4}
+],
+"SOUL_THIEF": 
+[
+	{"POSSIBLE_ITEMS": [7, 1, 5, 6, 4], "MIN": 1, "ISPREFIX": false, "DESC": "If a creature dies within 10 feet of wearer roll using the spellcasting stat against a DC 20 check, on success refund the lowest expended spell slot up to level 2", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 1, 5, 6, 4], "MIN": 1, "ISPREFIX": false, "DESC": "If a creature dies within 10 feet of wearer roll using the spellcasting stat against a DC 19 check, on success refund one expended spell slot up to level 3", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 1, 5, 6, 4], "MIN": 1, "ISPREFIX": false, "DESC": "If a creature dies within 10 feet of wearer roll using the spellcasting stat against a DC 18 check, on success refund one expended spell slot up to level 5", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 1, 5, 6, 4], "MIN": 1, "ISPREFIX": false, "DESC": "If a creature dies within 10 feet of wearer roll using the spellcasting stat against a DC 16 check, on success refund one expended spell slot up to level 8", "MAX": 1}
+], 
+"SHIELD": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": 5, "ISPREFIX": true, "DESC": "+{} to Temporary HP, recharges on short rest, stacks with other sources", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": 6, "ISPREFIX": true, "DESC": "+{} to Temporary HP, recharges on short rest, stacks with other sources", "MAX": 10}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": 15, "ISPREFIX": true, "DESC": "+{} to Temporary HP, recharges on short rest, stacks with other sources", "MAX": 30}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": 40, "ISPREFIX": true, "DESC": "+{} to Temporary HP, recharges on short rest, stacks with other sources", "MAX": 80}
+], 
+"MOVEMENT_SPEED": 
+[
+	{"POSSIBLE_ITEMS": [4], "MIN": 5, "ISPREFIX": true, "DESC": "+{} to movement speed ", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [4], "MIN": 10, "ISPREFIX": true, "DESC": "+{} to movement speed ", "MAX": 10}, 
+	{"POSSIBLE_ITEMS": [4], "MIN": 15, "ISPREFIX": true, "DESC": "+{} to movement speed ", "MAX": 15}, 
+	{"POSSIBLE_ITEMS": [4], "MIN": 20, "ISPREFIX": true, "DESC": "+{} to movement speed ", "MAX": 20}
+],
+"LIFE": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": 5, "ISPREFIX": true, "DESC": "+{} to maximum HP", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": 6, "ISPREFIX": true, "DESC": "+{} to maximum HP", "MAX": 25}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": 26, "ISPREFIX": true, "DESC": "+{} to maximum HP", "MAX": 50}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6], "MIN": 51, "ISPREFIX": true, "DESC": "+{} to maximum HP", "MAX": 100}
+], 
+"LIFE_REGEN": 
+[
+	{"POSSIBLE_ITEMS": [2, 4, 5, 6], "MIN": 1, "ISPREFIX": true, "DESC": "+{} HP Regenerated per turn", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [2, 4, 5, 6], "MIN": 2, "ISPREFIX": true, "DESC": "+{} HP Regenerated per turn", "MAX": 2}, 
+	{"POSSIBLE_ITEMS": [2, 4, 5, 6], "MIN": 4, "ISPREFIX": true, "DESC": "+{} HP Regenerated per turn", "MAX": 5}, 
+	{"POSSIBLE_ITEMS": [2, 4, 5, 6], "MIN": 8, "ISPREFIX": true, "DESC": "+{} HP Regenerated per turn", "MAX": 9}
+], 
+"SAVE_DC": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "Increases the saving throw DC of your spells and features by +{}", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 2, "ISPREFIX": true, "DESC": "Increases the saving throw DC of your spells and features by +{}", "MAX": 2}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 3, "ISPREFIX": true, "DESC": "Increases the saving throw DC of your spells and features by +{}", "MAX": 3}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 4, "ISPREFIX": true, "DESC": "Increases the saving throw DC of your spells and features by +{}", "MAX": 4}
+], 
+"LIFE_STEAL": 
+[
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 1, "ISPREFIX": false, "DESC": "Heal for {} per successful attack, half effect for ranged attacks", "MAX": 4}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 5, "ISPREFIX": false, "DESC": "Heal for {} per successful attack, half effect for ranged attacks", "MAX": 8}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 9, "ISPREFIX": false, "DESC": "Heal for {} per successful attack, half effect for ranged attacks", "MAX": 12}, 
+	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 13, "ISPREFIX": false, "DESC": "Heal for {} per successful attack, half effect for ranged attacks", "MAX": 16}
+], 
+"CAST_SPEED": 
+[
+	{"POSSIBLE_ITEMS": [7, 4, 1, 6, 5], "MIN": 1, "ISPREFIX": false, "DESC": "The magic is muddled and chaotic, granting nothing to the wearer", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 4, 1, 6, 5], "MIN": 1, "ISPREFIX": false, "DESC": "The magic is muddled and chaotic, granting nothing to the wearer", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 4, 1, 6, 5], "MIN": 1, "ISPREFIX": false, "DESC": "May cast a spell that has a casting time of 1 action as a bonus action", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [7, 4, 1, 6, 5], "MIN": 1, "ISPREFIX": false, "DESC": "May cast 2 spells given both have a casting time of 1 action", "MAX": 1}
+]
+}
