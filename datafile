@@ -403,6 +403,13 @@
 	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all lightning spells", "MAX": 1}, 
 	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all lightning spells", "MAX": 1}, 
 	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+2 to level of all lightning spells", "MAX": 1}
+],  
+"WEAPON_ACCURACY": 
+[
+	{"POSSIBLE_ITEMS": [1, 2, 7], "MIN": 1, "ISPREFIX": true, "DESC": "Add +{} to weapon attacks", "MAX": 2}, 
+	{"POSSIBLE_ITEMS": [1, 2, 7], "MIN": 3, "ISPREFIX": true, "DESC": "Add +{} to weapon attacks", "MAX": 4}, 
+	{"POSSIBLE_ITEMS": [1, 2, 7], "MIN": 5, "ISPREFIX": true, "DESC": "Add +{} to weapon attacks", "MAX": 6}, 
+	{"POSSIBLE_ITEMS": [1, 2, 7], "MIN": 7, "ISPREFIX": true, "DESC": "Add +{} to weapon attacks", "MAX": 8}
 ], 
 "CAST_SPEED": 
 [
