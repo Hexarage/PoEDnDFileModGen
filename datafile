@@ -327,6 +327,83 @@
 	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 9, "ISPREFIX": false, "DESC": "Heal for {} per successful attack, half effect for ranged attacks", "MAX": 12}, 
 	{"POSSIBLE_ITEMS": [0, 1, 2, 3, 8, 4, 5, 6, 7], "MIN": 13, "ISPREFIX": false, "DESC": "Heal for {} per successful attack, half effect for ranged attacks", "MAX": 16}
 ], 
+"UPCAST_HEALING_SPELLS": 
+[
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all healing spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all healing spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all healing spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+2 to level of all healing spells", "MAX": 1}
+], 
+"UPCAST_FIRE_SPELLS": 
+[
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all fire spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all fire spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all fire spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+2 to level of all fire spells", "MAX": 1}
+], 
+"UPCAST_COLD_SPELLS": 
+[
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all cold spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all cold spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all cold spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+2 to level of all cold spells", "MAX": 1}
+], 
+"UPCAST_POISON_SPELLS": 
+[
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all posion spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all posion spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all posion spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+2 to level of all posion spells", "MAX": 1}
+],  
+"UPCAST_ACID_SPELLS": 
+[
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all acid spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all acid spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all acid spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+2 to level of all acid spells", "MAX": 1}
+],  
+"UPCAST_PSYCHIC_SPELLS": 
+[
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all psychic spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all psychic spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all psychic spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+2 to level of all psychic spells", "MAX": 1}
+],  
+"UPCAST_NECROTIC_SPELLS": 
+[
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all necrotic spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all necrotic spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all necrotic spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+2 to level of all necrotic spells", "MAX": 1}
+],  
+"UPCAST_RADIANT_SPELLS": 
+[
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all radiant spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all radiant spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all radiant spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+2 to level of all radiant spells", "MAX": 1}
+],  
+"UPCAST_FORCE_SPELLS": 
+[
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all force spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all force spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all force spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+2 to level of all force spells", "MAX": 1}
+],  
+"UPCAST_THUNDER_SPELLS": 
+[
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all thunder spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all thunder spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all thunder spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+2 to level of all thunder spells", "MAX": 1}
+],  
+"UPCAST_LIGHTNING_SPELLS": 
+[
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all lightning spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all lightning spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+1 to level of all lightning spells", "MAX": 1}, 
+	{"POSSIBLE_ITEMS": [0, 5, 6, 7], "MIN": 1, "ISPREFIX": true, "DESC": "+2 to level of all lightning spells", "MAX": 1}
+], 
 "CAST_SPEED": 
 [
 	{"POSSIBLE_ITEMS": [7, 4, 1, 6, 5], "MIN": 1, "ISPREFIX": false, "DESC": "The magic is muddled and chaotic, granting nothing to the wearer", "MAX": 1}, 
