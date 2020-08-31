@@ -84,26 +84,8 @@ def makeItem(preffixes = 0, suffixes=0, itemType=0, tier=1):
 
 
 def main():
-	"""
-	print("Hey there, the types of items are as follows:")
-	print("Headwear: ", tHead)
-	print("Gloves: ", tGloves)
-	print("Belts: ",tBelt)
-	print("Pants: ", tPants)
-	print("Shoes: ", tShoes)
-	print("Necklaces: ", tNecklace)
-	print("Rings: ", tRing)
-	print("Weapons: ", tWeapon)
-	print("\n\nPlease enter the rarity(1 for curruption, 2 for magic and 3 for rare), the item type and finally the level of the character.")
-	rarity = int(input("Rarity?"))
-	itemType = int(input("What's the item type?"))
-	if itemType>7 or itemType<0:
-		itemType = tWeapon
-	level = int(input("What level is the character?"))
-	tier = decideTier(level)
-	"""
 	equipment = open('equipmentFile', 'w')
-	equipment.write(makeItem(3, 3, tRing, 1))
+	equipment.write(makeItem(preffixes=2, suffixes=3, itemType=tWeapon, tier=decideTier(level=3)))
 
 if __name__ == "__main__":
 	main()
