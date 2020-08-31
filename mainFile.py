@@ -64,6 +64,7 @@ def generateXFixes(rareItem=True):
 #TODO: Add influences (making it so that some mods are more likely), this will play into delve crafting
 #TODO: Add essences (Predetermined mod)
 #TODO: Make item reusable (so that item changing can be done through script)
+#TODO: Add spell gem slots, 3 types (possibly color coded) with some random number of sockets, possibly between 3 and 6 (maybe copy the way it is in game)
 def makeItem(preffixes = 0, suffixes=0, itemType=0, tier=1):
 	with open('datafile', 'r') as infile:
 		jsonData = json.load(infile)
