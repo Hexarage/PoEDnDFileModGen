@@ -43,6 +43,27 @@ def decideTier(level=1):
 	else:
 		return 4
 
+def generateXFixes(rareItem=True):
+	#Magic items have one affix and one prefix, can have 2 of one type if the other is 0
+	#rare items have between 1 and 3 of each with a minimum total of 3, changing this to 2 - 3
+	modList = []
+	if rareItem:
+		modList.append(random.randint(2,3))
+		modList.append(random.randint(2,3))
+	else:
+		modList.append(random.randint(0,2))
+		if modList[0]==2:
+			modList.append(0)
+		elif modList[0]==0:
+			modList.append(random.randint(0,2))
+		else:
+			modList.append(random.randint(0,1))
+	return modList
+
+#TODO: Break down the function into more managable components
+#TODO: Add influences (making it so that some mods are more likely), this will play into delve crafting
+#TODO: Add essences (Predetermined mod)
+#TODO: Make item reusable (so that item changing can be done through script)
 def makeItem(preffixes = 0, suffixes=0, itemType=0, tier=1):
 	with open('datafile', 'r') as infile:
 		jsonData = json.load(infile)
@@ -59,6 +80,7 @@ def makeItem(preffixes = 0, suffixes=0, itemType=0, tier=1):
 		if len(accumulateList)!= (len(prefixList)+len(affixList)):
 			print("Loading did not go well, please debug")
 		else:
+			accumulateList = None #Clearing unused variables
 			modDescriptions = "A " + typeDict[itemType] + " that grants: \n"
 			for prefixes in range(preffixes):
 				dictionary = {}
@@ -85,7 +107,8 @@ def makeItem(preffixes = 0, suffixes=0, itemType=0, tier=1):
 
 def main():
 	equipment = open('equipmentFile', 'w')
-	equipment.write(makeItem(preffixes=2, suffixes=3, itemType=tWeapon, tier=decideTier(level=3)))
+	modNumberList = generateXFixes(True)#first entry [0] is for preffixes, second entry [1] is for affixes/suffixes
+	equipment.write(makeItem(preffixes=modNumberList[0], suffixes=modNumberList[1], itemType=tWeapon, tier=decideTier(level=3)))
 
 if __name__ == "__main__":
 	main()
