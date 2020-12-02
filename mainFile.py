@@ -65,13 +65,14 @@ def generateXFixes(rareItem=True):
 #TODO: Add essences (Predetermined mod)
 #TODO: Make item reusable (so that item changing can be done through script)
 #TODO: Add spell gem slots, 3 types (possibly color coded) with some random number of sockets, possibly between 3 and 6 (maybe copy the way it is in game)
-def makeItem(preffixes = 0, suffixes=0, itemType=0, tier=1):
+
+def makeItem(preffixes = 0, suffixes=0, itemType=0, tier=1, strItemType = 'SWORDS'):
 	with open('datafile', 'r') as infile:
 		jsonData = json.load(infile)
 		accumulateList = []
 		prefixList = []
 		affixList = []
-		for key, value in jsonData.items():
+		for _key, value in jsonData.items():
 			if isinstance(value[0], dict):
 				accumulateList.append(value)
 				if value[0]['ISPREFIX']:
@@ -82,8 +83,9 @@ def makeItem(preffixes = 0, suffixes=0, itemType=0, tier=1):
 			print("Loading did not go well, please debug")
 		else:
 			accumulateList = None #Clearing unused variables
-			modDescriptions = "A " + typeDict[itemType] + " that grants: \n"
-			for prefixes in range(preffixes):
+			
+			modDescriptions = getName(strItemType.upper())+ "\nA " + typeDict[itemType] + " that grants: \n"
+			for _prefixes in range(preffixes):
 				dictionary = {}
 				while True:
 					tempList = getRandomMod(prefixList)
@@ -92,7 +94,7 @@ def makeItem(preffixes = 0, suffixes=0, itemType=0, tier=1):
 						dictionary = tempDict
 						break
 				modDescriptions += dictionary['DESC'].format(random.randint(dictionary['MIN'], dictionary['MAX'])) + '\n'
-			for affixes in range(suffixes):
+			for _affixes in range(suffixes):
 				dictionary = {}
 				while True:
 					tempList = getRandomMod(affixList)
@@ -105,11 +107,21 @@ def makeItem(preffixes = 0, suffixes=0, itemType=0, tier=1):
 
 			return modDescriptions
 
+def getName(strItemType = 'SWORDS'):
+    with open('names.json') as json_file:
+        data = json.load(json_file)
+        genericList = data['NAMES']['GENERIC']
+        specificList = data['NAMES'][strItemType]
+        fullName = generateName(genericList)+" "+ generateName(specificList)
+    return fullName
+
+def generateName(NameList):
+    return NameList[random.randint(0,len(NameList)-1)]
 
 def main():
 	equipment = open('equipmentFile', 'w')
 	modNumberList = generateXFixes(True)#first entry [0] is for preffixes, second entry [1] is for affixes/suffixes
-	equipment.write(makeItem(preffixes=modNumberList[0], suffixes=modNumberList[1], itemType=tWeapon, tier=decideTier(level=3)))
+	equipment.write(makeItem(preffixes=modNumberList[0], suffixes=modNumberList[1], itemType=tWeapon, tier=decideTier(level=4),strItemType = 'axes'))
 
 if __name__ == "__main__":
 	main()

@@ -6,8 +6,9 @@ class Mod:
 		self._min = min
 		self._max = max
 		self._description = desc
-		self._possibleItems = possibleItems
+		self._possibleItems = possibleItems	
 		self._isPrefix = prefix
+		self._tier = 1
 
 	@property
 	def mid(self):
