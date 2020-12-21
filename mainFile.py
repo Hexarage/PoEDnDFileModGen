@@ -118,15 +118,18 @@ def getName(strItemType = 'SWORDS'):
 def generateName(NameList):
     return NameList[random.randint(0,len(NameList)-1)]
 
+
+
 def main():
 	equipment = open('equipmentFile', 'w')
 	modNumberList = generateXFixes(True)#first entry [0] is for preffixes, second entry [1] is for affixes/suffixes
-	#strItemType can be
-	#AMULETS, AXES, BELTS, BODYS, BOOTS, BOWS
-	#CLAWS, DAGGERS, GLOVES, GLOVES, HELMETS, MACES,
-	#OTHER_SHIELDS, PANTS, QUIVERS, RINGS, SCEPTRES,
-	#SPIRIT_SHIELDS, STAVES, SWORDS, WANDS
-	equipment.write(makeItem(preffixes=modNumberList[0], suffixes=modNumberList[1], itemType=tWeapon, tier=decideTier(level=4),strItemType = 'axes'))
+	
+	# strItemType can be
+	# Armors: BODYS, BOOTS, GLOVES, HELMETS, PANTS, OTHER_SHIELDS
+	# Weapons: AXES, BOWS, CLAWS, DAGGERS, MACES, SCEPTRES, STAVES, SWORDS, WANDS
+	# Misc: AMULETS,BELTS, , QUIVERS, RINGS, SPIRIT_SHIELDS
+
+	equipment.write(makeItem(preffixes=modNumberList[0], suffixes=modNumberList[1], itemType=tWeapon, tier=decideTier(level=5),strItemType = 'MACES'))
 
 if __name__ == "__main__":
 	main()
