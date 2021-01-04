@@ -4,10 +4,6 @@ import json
 import Modifier
 import random
 
-def getRandomMod(modList=[]):
-	if len(modList) != 0:
-		return modList.pop(random.randint(0, len(modList)-1))
-
 tHead = 0
 tGloves = 1
 tBelt = 2
@@ -33,6 +29,16 @@ typeDict = {
 magicItemModNumber = 2
 rareItemModNumber = 3
 
+#TODO: Break down the function into more managable components
+#TODO: Add influences (making it so that some mods are more likely), this will play into delve crafting
+#TODO: Add essences (Predetermined mod)
+#TODO: Make item reusable (so that item changing can be done through script)
+#TODO: Add spell gem slots, 3 types (possibly color coded) with some random number of sockets, possibly between 3 and 6 (maybe copy the way it is in game)
+
+def getRandomMod(modList=[]):
+	if len(modList) != 0:
+		return modList.pop(random.randint(0, len(modList)-1))
+
 def decideTier(level=1):
 	if level<5:
 		return 1
@@ -43,7 +49,7 @@ def decideTier(level=1):
 	else:
 		return 4
 
-def generateXFixes(rareItem=True):
+def generateXFixNumbers(rareItem=True):
 	#Magic items have one affix and one prefix, can have 2 of one type if the other is 0
 	#rare items have between 1 and 3 of each with a minimum total of 3, changing this to 2 - 3
 	modList = []
@@ -60,52 +66,13 @@ def generateXFixes(rareItem=True):
 			modList.append(random.randint(0,1))
 	return modList
 
-#TODO: Break down the function into more managable components
-#TODO: Add influences (making it so that some mods are more likely), this will play into delve crafting
-#TODO: Add essences (Predetermined mod)
-#TODO: Make item reusable (so that item changing can be done through script)
-#TODO: Add spell gem slots, 3 types (possibly color coded) with some random number of sockets, possibly between 3 and 6 (maybe copy the way it is in game)
-
 def makeItem(preffixes = 0, suffixes=0, itemType=0, tier=1, strItemType = 'SWORDS'):
-	with open('datafile', 'r') as infile:
-		jsonData = json.load(infile)
-		accumulateList = []
-		prefixList = []
-		affixList = []
-		for _key, value in jsonData.items():
-			if isinstance(value[0], dict):
-				accumulateList.append(value)
-				if value[0]['ISPREFIX']:
-					prefixList.append(value)
-				else:
-					affixList.append(value)
-		if len(accumulateList)!= (len(prefixList)+len(affixList)):
-			print("Loading did not go well, please debug")
-		else:
-			accumulateList = None #Clearing unused variables
-			
-			modDescriptions = getName(strItemType.upper())+ "\nA " + typeDict[itemType] + " that grants: \n"
-			for _prefixes in range(preffixes):
-				dictionary = {}
-				while True:
-					tempList = getRandomMod(prefixList)
-					tempDict = tempList[tier-1]
-					if itemType in tempDict['POSSIBLE_ITEMS']:
-						dictionary = tempDict
-						break
-				modDescriptions += dictionary['DESC'].format(random.randint(dictionary['MIN'], dictionary['MAX'])) + '\n'
-			for _affixes in range(suffixes):
-				dictionary = {}
-				while True:
-					tempList = getRandomMod(affixList)
-					tempDict = tempList[tier-1]
-					if itemType in tempDict['POSSIBLE_ITEMS']:
-						dictionary = tempDict
-						break
-				randomNumber=random.randint(dictionary['MIN'], dictionary['MAX'])
-				modDescriptions += dictionary['DESC'].format(randomNumber) + '\n'
-
-			return modDescriptions
+	[prefixList, affixList] = loadXFixes(itemType)
+	modDescriptions = getName(strItemType.upper())+ "\nA " + typeDict[itemType] + " that grants: \n"
+	modDescriptions += generateDescription(prefixList, tier, preffixes)
+	modDescriptions += generateDescription(affixList, tier, suffixes)
+	
+	return modDescriptions
 
 def getName(strItemType = 'SWORDS'):
     with open('names.json') as json_file:
@@ -118,18 +85,42 @@ def getName(strItemType = 'SWORDS'):
 def generateName(NameList):
     return NameList[random.randint(0,len(NameList)-1)]
 
+def loadXFixes(itemType):
+	with open('modifiers.json', 'r') as infile:
+		data = json.load(infile)
+		prefixDict = data['PREFFIXES']
+		affixDict = data['AFFIXES']
+	return [filterTypeAndConvertToList(itemType,prefixDict), filterTypeAndConvertToList(itemType,affixDict)]
 
+def generateDescription(xfixList, tier, Range):
+	"""
+	Generates the description from the given xfix list, tier and number of modifiers
+	"""
+	modDescriptions = ""
+	for _xfix in range(Range):
+		dictionary = getRandomMod(xfixList)[tier-1]
+		modDescriptions += dictionary['DESC'].format(random.randint(dictionary['MIN'], dictionary['MAX'])) + '\n'
+	return modDescriptions
+	
+def filterTypeAndConvertToList(itemType, modifierDict):
+	"""
+	Converts the read dict into a list, removing the keys and filtering out the modifiers that do not apply
+	"""
+	returnList = []
+	for _key, value in modifierDict.items() :
+		if isinstance(value[0], dict) and itemType in value[0]['POSSIBLE_ITEMS']:
+			returnList.append(value)
+	return returnList
 
+# strItemType can be
+# Armors: BODYS, BOOTS, GLOVES, HELMETS, PANTS, OTHER_SHIELDS
+# Weapons: AXES, BOWS, CLAWS, DAGGERS, MACES, SCEPTRES, STAVES, SWORDS, WANDS
+# Misc: AMULETS,BELTS, QUIVERS, RINGS, SPIRIT_SHIELDS
 def main():
 	equipment = open('equipmentFile', 'w')
-	modNumberList = generateXFixes(True)#first entry [0] is for preffixes, second entry [1] is for affixes/suffixes
-	
-	# strItemType can be
-	# Armors: BODYS, BOOTS, GLOVES, HELMETS, PANTS, OTHER_SHIELDS
-	# Weapons: AXES, BOWS, CLAWS, DAGGERS, MACES, SCEPTRES, STAVES, SWORDS, WANDS
-	# Misc: AMULETS,BELTS, , QUIVERS, RINGS, SPIRIT_SHIELDS
+	modNumberList = generateXFixNumbers(True) #first entry [0] is for preffixes, second entry [1] is for affixes/suffixes
 
-	equipment.write(makeItem(preffixes=modNumberList[0], suffixes=modNumberList[1], itemType=tWeapon, tier=decideTier(level=5),strItemType = 'MACES'))
+	equipment.write(makeItem(preffixes=modNumberList[0], suffixes=modNumberList[1], itemType=tWeapon, tier=decideTier(level=5),strItemType = 'SWORDS'))
 
 if __name__ == "__main__":
 	main()
