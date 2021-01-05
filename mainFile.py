@@ -68,6 +68,7 @@ def generateXFixNumbers(rareItem=True):
 
 def makeItem(preffixes = 0, suffixes=0, itemType=0, tier=1, strItemType = 'SWORDS'):
 	[prefixList, affixList] = loadXFixes(itemType)
+
 	modDescriptions = getName(strItemType.upper())+ "\nA " + typeDict[itemType] + " that grants: \n"
 	modDescriptions += generateDescription(prefixList, tier, preffixes)
 	modDescriptions += generateDescription(affixList, tier, suffixes)
@@ -91,16 +92,6 @@ def loadXFixes(itemType):
 		prefixDict = data['PREFFIXES']
 		affixDict = data['AFFIXES']
 	return [filterTypeAndConvertToList(itemType,prefixDict), filterTypeAndConvertToList(itemType,affixDict)]
-
-def generateDescription(xfixList, tier, Range):
-	"""
-	Generates the description from the given xfix list, tier and number of modifiers
-	"""
-	modDescriptions = ""
-	for _xfix in range(Range):
-		dictionary = getRandomMod(xfixList)[tier-1]
-		modDescriptions += dictionary['DESC'].format(random.randint(dictionary['MIN'], dictionary['MAX'])) + '\n'
-	return modDescriptions
 	
 def filterTypeAndConvertToList(itemType, modifierDict):
 	"""
@@ -111,6 +102,16 @@ def filterTypeAndConvertToList(itemType, modifierDict):
 		if isinstance(value[0], dict) and itemType in value[0]['POSSIBLE_ITEMS']:
 			returnList.append(value)
 	return returnList
+
+def generateDescription(xfixList, tier, Range):
+	"""
+	Generates the description from the given xfix list, tier and number of modifiers
+	"""
+	modDescriptions = ""
+	for _xfix in range(Range):
+		dictionary = getRandomMod(xfixList)[tier-1]
+		modDescriptions += dictionary['DESC'].format(random.randint(dictionary['MIN'], dictionary['MAX'])) + '\n'
+	return modDescriptions
 
 # strItemType can be
 # Armors: BODYS, BOOTS, GLOVES, HELMETS, PANTS, OTHER_SHIELDS
