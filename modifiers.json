@@ -2,7 +2,7 @@
     "CURSES":{
         
     },
-	"PREFFIXES": {		
+	"PREFIXES": {
         "HEALING_CRITICALS": [
         	{"POSSIBLE_ITEMS": [7, 4, 5, 6], "MIN": 1, "DESC": "Healing spells can now crit, for each die that has rolled maximum, roll again up to twice per die", "MAX": 1}, 
         	{"POSSIBLE_ITEMS": [7, 4, 5, 6], "MIN": 1, "DESC": "Healing spells can now crit, for each die that has rolled maximum, roll again up to three times per die", "MAX": 1}, 
